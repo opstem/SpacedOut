@@ -10,6 +10,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             const titleText = document.getElementById('title-text');
             titleText.style.display = 'block';
+
+            const rocket = document.querySelector('.rocket');
+            rocket.addEventListener('animationend', () => {
+                rocket.style.display = 'none';
+            });
         });
     </script>
 </head>
@@ -25,5 +30,42 @@
         <h1>Historic Hacks</h1>
         <h2>June 13-15</h2>
     </div>
+
+    <br style="margin: 40vh 0;">
+
+    <table class="section">
+        <tr>
+            <td>
+                <p>Join us in Old town manassas a space Themed Game Jam!</p>
+            </td>
+            <td>
+                <img src="assets/images/Comet.svg">
+            </td>
+        </tr>
+    </table>
+
+    <table class="section">
+        <tr>
+            <td>
+                
+                <img src="https://preview.redd.it/pvipb16mkliz.png?auto=webp&s=8d5c37e3345a17ca6b77755403476e3068018e74">
+            </td>
+            <td>
+                <p>From June 13-15, work with a team of highschoolers to make a fun game (Multiple teams will win prizes!)</p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="section">
+        <tr>
+            <td>
+                <p>Code, Art, and make music for your game while taking part in fun activities like stargazing, workshops, and eating free food!</p>
+            </td>
+            <td>
+                <img src="assets/images/Comet.svg">
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>

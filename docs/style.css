@@ -1,10 +1,16 @@
+@font-face{
+    font-family: Liham;
+    src: url(assets/fonts/Liham.otf) format('opentype');
+}
+
 html {
     height: 100%;
 }
 
 body {
     background-image: linear-gradient(black, #342c4d);
-    overflow: hidden;
+    align-items: center;
+    background-attachment: fixed;
 }
 
 .rocket {
@@ -13,6 +19,7 @@ body {
     left: -100px;
     transform: translateY(-50%);
     animation: fly 2.5s linear forwards;
+    overflow: hidden; /* Add this line */
 }
 
 .rocket img {
@@ -59,4 +66,31 @@ body {
     100% {
         clip-path: inset(0 0 0 0);
     }
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+    content: " ";
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    height: 15em;
+    width: 100%;
+    width: 90%;
+    border-spacing: 1.5em;
+}
+
+.section img {
+    height: 15em;
+}
+
+.section p,
+.section li {
+    font-size: 1.5em;
+    font-family: Liham;
+    text-align: center;
+    color: #edc547
 }
