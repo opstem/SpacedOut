@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(black, #342c4d);
+}
+
+.title {
+    text-align: center;
+}
+
+.title img {
+    height: 40vh;
+}
+
+.title h1 {
+    color: #edc547;
+    font-family: Major Mono Display;
+    font-size: 8vh;
+}
+
+.title h2 {
+    color: #d58c36;
+    font-family: Calibri;
+    font-weight: 300;
+    font-size: 2em;
+}
