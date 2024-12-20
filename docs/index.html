@@ -6,15 +6,24 @@
     <title>HistoricHacks</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const titleText = document.getElementById('title-text');
+            titleText.style.display = 'block';
+        });
+    </script>
 </head>
 <body>
-    <div class="title">
-        <img src="assets/images/Front page background.svg">
+    <div style="text-align: center;">
+        <img src="assets/images/Front page background.svg" class="titleimg">
+    </div>
+
+    <div class="rocket">
+        <img src="assets/images/rocket.svg" alt="Rocket Ship">
+    </div>
+    <div class="title" id="title-text" style="display: none;">
         <h1>Historic Hacks</h1>
         <h2>June 13-15</h2>
     </div>
-
-    
-
 </body>
 </html>

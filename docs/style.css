@@ -4,13 +4,38 @@ html {
 
 body {
     background-image: linear-gradient(black, #342c4d);
+    overflow: hidden;
+}
+
+.rocket {
+    position: absolute;
+    top: 60%;
+    left: -100px;
+    transform: translateY(-50%);
+    animation: fly 2.5s linear forwards;
+}
+
+.rocket img {
+    height: 20vh;
+    transform: rotate(90deg);
+}
+
+@keyframes fly {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 .title {
     text-align: center;
+    clip-path: inset(0 100% 0 0);
+    animation: reveal 2.5s linear forwards;
 }
 
-.title img {
+.titleimg {
     height: 40vh;
 }
 
@@ -25,4 +50,13 @@ body {
     font-family: Calibri;
     font-weight: 300;
     font-size: 2em;
+}
+
+@keyframes reveal {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
 }
