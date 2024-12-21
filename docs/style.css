@@ -75,12 +75,14 @@ br {
 }
 
 .section {
-    margin-left: auto;
-    margin-right: auto;
-    height: 15em;
-    width: 100%;
-    width: 90%;
-    border-spacing: 1.5em;
+    width: 95%;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    border-spacing: 1em;
+}
+
+.section.visible {
+    opacity: 1;
 }
 
 .section img {
@@ -107,4 +109,30 @@ br {
     position: absolute;
     top: 0; /* Align to the top */
     right: 0; /* Align to the right */
+}
+
+@keyframes fly-in-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fly-in-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fly-in-left.visible {
+    animation: fly-in-left 1.5s ease-out;
+}
+
+.fly-in-right.visible {
+    animation: fly-in-right 1.5s ease-out;
 }

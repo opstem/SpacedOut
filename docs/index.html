@@ -15,6 +15,26 @@
             rocket.addEventListener('animationend', () => {
                 rocket.style.display = 'none';
             });
+
+            const sections = document.querySelectorAll('.section');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach((section, index) => {
+                if (index % 2 === 0) {
+                    section.classList.add('fly-in-left');
+                } else {
+                    section.classList.add('fly-in-right');
+                }
+                observer.observe(section);
+            });
         });
     </script>
 </head>
@@ -32,6 +52,8 @@
     </div>
 
     <br style="margin: 40vh 0;">
+
+    <h2 style="text-align: center; font-family: Major Mono Display; font-size: 5em; color: #edc547;">About Us!</h2>
 
     <table class="section">
         <tr>
@@ -87,11 +109,11 @@
     <table class="section">
         <tr>
             <td>
-                
                 <img src="assets/images/Gold star.svg">
             </td>
             <td>
-                <p>Registrations Coming Soon!</p>
+                <p>Preliminary Sign-ups Open Now!</p>
+                <div style="width: 200px; margin-left: auto; margin-right: auto;"><div data-fillout-id="uLhbxdr7ngus" data-fillout-embed-type="popup" data-fillout-button-text="Sign Up Now" data-fillout-button-size="large" data-fillout-inherit-parameters data-fillout-popup-size="large"></div><script src="https://server.fillout.com/embed/v1/"></script></div>
             </td>
         </tr>
     </table>
