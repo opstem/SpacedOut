@@ -6,37 +6,7 @@
     <title>HistoricHacks</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const titleText = document.getElementById('title-text');
-            titleText.style.display = 'block';
-
-            const rocket = document.querySelector('.rocket');
-            rocket.addEventListener('animationend', () => {
-                rocket.style.display = 'none';
-            });
-
-            const sections = document.querySelectorAll('.section');
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            sections.forEach((section, index) => {
-                if (index % 2 === 0) {
-                    section.classList.add('fly-in-left');
-                } else {
-                    section.classList.add('fly-in-right');
-                }
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div style="text-align: center;">
@@ -48,7 +18,7 @@
     </div>
     <div class="title" id="title-text" style="display: none;">
         <h1>Historic Hacks</h1>
-        <h2>June 13-15</h2>
+        <h2>June 13-15<br>Old Town Manassas</h2>
     </div>
 
     <br style="margin: 40vh 0;">
@@ -115,7 +85,5 @@
             </td>
         </tr>
     </table>
-
-
 </body>
 </html>

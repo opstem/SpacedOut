@@ -18,12 +18,12 @@ body {
     top: 60%;
     left: -100px;
     transform: translateY(-50%);
-    animation: fly 2.5s linear forwards;
+    animation: fly linear forwards;
     overflow: hidden; /* Add this line */
 }
 
 .rocket img {
-    height: 40vh;
+    height: 50vh;
     transform: rotate(90deg);
 }
 
@@ -39,8 +39,7 @@ body {
 .title {
     text-align: center;
     clip-path: inset(0 100% 0 0);
-    animation: reveal 2.5s linear forwards; /* Match the duration with the rocket animation */
-    animation-delay: 0s; /* Adjust the delay to synchronize with the rocket animation */
+    animation: reveal linear forwards;
 }
 
 .titleimg {
