@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+    .section img {
+        display: none;
+    }
+
+    .fillout {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .fillout-button {
+        display: none;
+    }
+}
+
 @font-face{
     font-family: Liham;
     src: url(assets/fonts/Liham.otf) format('opentype');
@@ -34,6 +50,30 @@ body {
     100% {
         left: 100%;
     }
+}
+
+.fillout {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fillout-button {
+    text-decoration: none;
+}
+
+.fillout-button button {
+    text-align: center;
+    background-color: rgb(0, 142, 250);
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-family: Lato;
+    font-size: 2em;
+    border-radius: 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .title {
@@ -95,6 +135,11 @@ br {
     font-family: Liham;
     text-align: center;
     color: #edc547
+}
+
+.section p {
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .section table img {
