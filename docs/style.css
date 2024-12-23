@@ -1,3 +1,10 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in { animation: fadeIn 3s; }
+
 @keyframes twinkle {
     0%, 100% {
         opacity: 1;
@@ -63,6 +70,8 @@ body {
     background-image: linear-gradient(black, #342c4d);
     align-items: center;
     background-attachment: fixed;
+    overflow-y: scroll;
+    margin: 0;
 }
 
 .rocket {
@@ -98,7 +107,7 @@ body {
     text-decoration: none;
 }
 
-.fillout-button button {
+.fillout-button button, button {
     text-align: center;
     background-color: rgb(0, 142, 250);
     display: block;
@@ -110,6 +119,67 @@ body {
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #333;
+    font-family: Lato;
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: inline-block;
+    border-radius: 15px;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Lato;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    float: left;
+}
+
+.nav li:first-child {
+    margin-left: 0;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.nav li.active a:hover {
+    background-color: violet;
+}
+
+.nav li a:hover {
+    background-color: #111;
+    border-radius: 1em;
 }
 
 .title {
@@ -153,6 +223,7 @@ br {
 
 .section {
     width: 95%;
+    padding: 0 3em;
     opacity: 0;
     transition: opacity 0.5s ease-out;
     border-spacing: 1em;
