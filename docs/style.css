@@ -24,7 +24,7 @@
     height: 2px;
     background: white;
     opacity: 0;
-    animation: twinkle 2s infinite ease-in-out;
+    animation: twinkle 0.8s infinite ease-in-out;
 }
 
 /* Generate multiple stars with different positions and animation delays */
