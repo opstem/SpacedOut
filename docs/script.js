@@ -1,3 +1,15 @@
+const starsContainer = document.querySelector('.stars');
+const numberOfStars = 80;
+
+for (let i = 0; i < numberOfStars; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.left = `${Math.random() * 100}%`;
+    star.style.animationDelay = `${Math.random() * 2}s`;
+    starsContainer.appendChild(star);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const titleText = document.getElementById('title-text');
     titleText.style.display = 'block';
@@ -35,17 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         observer.observe(section);
     });
-
-    // Add this part to create more stars
-    const starsContainer = document.querySelector('.stars');
-    const numberOfStars = 100; // Adjust the number of stars as needed
-
-    for (let i = 0; i < numberOfStars; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        star.style.top = `${Math.random() * 100}%`;
-        star.style.left = `${Math.random() * 100}%`;
-        star.style.animationDelay = `${Math.random() * 2}s`;
-        starsContainer.appendChild(star);
-    }
 });
