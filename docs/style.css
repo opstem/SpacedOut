@@ -1,3 +1,40 @@
+/* Add this at the beginning of your CSS file */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1; /* Ensure stars are behind other content */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    opacity: 0;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+/* Generate multiple stars with different positions and animation delays */
+.star:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.star:nth-child(2) { top: 30%; left: 40%; animation-delay: 0.5s; }
+.star:nth-child(3) { top: 50%; left: 60%; animation-delay: 1s; }
+.star:nth-child(4) { top: 70%; left: 80%; animation-delay: 1.5s; }
+.star:nth-child(5) { top: 90%; left: 10%; animation-delay: 2s; }
+/* Add more stars as needed */
+
 @media (max-width: 768px) {
     .section img {
         display: none;
