@@ -1,4 +1,3 @@
-/* Add this at the beginning of your CSS file */
 @keyframes twinkle {
     0%, 100% {
         opacity: 1;
@@ -51,7 +50,7 @@
     }
 }
 
-@font-face{
+@font-face {
     font-family: Liham;
     src: url(assets/fonts/Liham.otf) format('opentype');
 }
@@ -171,7 +170,7 @@ br {
     font-size: 1.5em;
     font-family: Liham;
     text-align: center;
-    color: #edc547
+    color: #edc547;
 }
 
 .section p {
