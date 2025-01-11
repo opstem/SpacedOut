@@ -208,6 +208,7 @@ footer {
 .title h1 {
     color: #edc547;
     font-family: Major Mono Display;
+    text-transform: lowercase;
     font-size: 8vh;
 }
 
