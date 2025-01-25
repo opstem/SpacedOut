@@ -1,2 +1,3 @@
 # SpacedOut
-SpacedOut is a space themed hackathon in Old Town Manassas happening this June 13-15.
+SpacedOut is a spaced themed Hackathon withing the DMV.
+The Hackathonw will be happning June 13-15th.
