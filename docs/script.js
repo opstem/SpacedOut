@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const screenWidth = window.innerWidth;
     const rocketWidth = rocketImg.clientWidth;
     const travelDistance = screenWidth + rocketWidth;
-    const animationDuration = travelDistance / 1000; // Decrease the divisor to speed up the rocket
+    const animationDuration = travelDistance / 1000;
 
     rocket.style.animationDuration = `${animationDuration}s`;
     titleText.style.animationDuration = `${animationDuration}s`;
