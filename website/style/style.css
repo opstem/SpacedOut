@@ -302,3 +302,111 @@ br {
 .fly-in-right.visible {
     animation: fly-in-right 1.5s ease-out;
 }
+
+
+/* Testing Code for HCB Yoinker TM*/
+
+
+#hcb-data {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    overflow-x: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+#hcb-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#hcb-data th, #hcb-data td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#hcb-data th {
+    background-color: #444;
+    color: #edc547;
+}
+
+#hcb-data tr:hover {
+    background-color: rgba(237, 197, 71, 0.1);
+}
+
+#hcb-data tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#hcb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hcb-container h2 {
+    color: #c61b1b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#hcb-data {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#hcb-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#hcb-data th, #hcb-data td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#hcb-data th {
+    background-color: #444;
+    color: #edc547;
+}
+
+#hcb-data tr:hover {
+    background-color: rgba(237, 197, 71, 0.1);
+}
+
+#hcb-data tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 600px) {
+    #hcb-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    #hcb-data th {
+        display: none;
+    }
+
+    #hcb-data td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    #hcb-data td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
